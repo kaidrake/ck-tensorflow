@@ -99,7 +99,17 @@
     "rpi4": {
       "extra_env": {
         "EXTRA_CXXFLAGS": "-march=armv7-a+neon+vfpv4 -mfpu=neon-vfpv4 "
-      }
+      },
+      "on_by_default": "no"
+    },
+    "v2.4.0": {
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v2.4.0",
+        "PACKAGE_PATCH__PACKAGE": "v2.4.0_package.patch",
+        "PACKAGE_PATCH__OFFSETOF": "v2.3.90_offsetof.patch",
+        "PACKAGE_VERSION": "2.4.0"
+      },
+      "on_by_default": "yes"
     },
     "v2.3.90": {
       "extra_env": {
@@ -108,7 +118,7 @@
         "PACKAGE_PATCH__OFFSETOF": "v2.3.90_offsetof.patch",
         "PACKAGE_VERSION": "2.3.90"
       },
-      "on_by_default": "yes"
+      "on_by_default": "no"
     },
     "v2.3.91": {
       "extra_env": {
