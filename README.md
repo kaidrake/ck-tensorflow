@@ -1,6 +1,6 @@
 # Collective Knowledge components for TensorFlow
 
-*This fork is maintained by [dividiti Limited](https://dividiti.com).*
+*This fork is maintained by [Krai Ltd](https://krai.ai).*
 
 [![compatibility](https://github.com/ctuning/ck-guide-images/blob/master/ck-compatible.svg)](https://github.com/ctuning/ck)
 [![automation](https://github.com/ctuning/ck-guide-images/blob/master/ck-artifact-automated-and-reusable.svg)](http://cTuning.org/ae)
