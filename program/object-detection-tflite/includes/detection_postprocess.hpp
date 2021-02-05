@@ -718,7 +718,14 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
   // by choosing effective set of decoded boxes
   // based on Non Maximal Suppression, i.e. selecting
   // highest scoring non-overlapping boxes.
+  std::chrono::time_point<std::chrono::high_resolution_clock> nms_time;
+  session.measure_begin(&nms_time);
   NonMaxSuppressionMultiClass(context, node, op_data);
+
+
+  session.measure_end_non_max_suppression(&nms_time);
+
+
 
   return kTfLiteOk;
 }

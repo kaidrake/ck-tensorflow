@@ -17,12 +17,15 @@
 
 #include "settings.h"
 #include "benchmark.h"
-#include "detection_postprocess.hpp"
+
 
 using namespace std;
 using namespace tflite;
 using namespace CK;
 
+Settings settings;
+BenchmarkSession session(&settings);
+#include "detection_postprocess.hpp"
 
 template<typename TData, typename TInConverter, typename TOutConverter>
 class TFLiteBenchmark : public Benchmark<TData, TInConverter, TOutConverter> {
@@ -37,8 +40,6 @@ public:
     }
 };
 
-Settings settings;
-BenchmarkSession session(&settings);
 
 void* Init(TfLiteContext* context, const char* buffer, size_t length) {
     ops::custom::detection_postprocess::OpData* result;
