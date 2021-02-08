@@ -23,8 +23,9 @@ using namespace std;
 using namespace tflite;
 using namespace CK;
 
-Settings settings;
-BenchmarkSession session(&settings);
+extern Settings settings;
+extern BenchmarkSession session;
+
 #include "detection_postprocess.hpp"
 
 template<typename TData, typename TInConverter, typename TOutConverter>

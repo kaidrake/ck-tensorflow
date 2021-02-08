@@ -8,7 +8,11 @@
 
 #include "includes/detect.hpp"
 
+Settings settings;
+BenchmarkSession session(&settings);
+
 int main(int argc, char *argv[]) {
+
     try {
         init_benchmark();
 
