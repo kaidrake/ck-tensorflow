@@ -10,6 +10,7 @@
       "PACKAGE_SUB_DIR": "src", 
       "PACKAGE_URL": "https://github.com/tensorflow/tensorflow"
     }, 
+    "no_ver_in_suggested_path": "yes",
     "no_os_in_suggested_path": "yes",
     "use_git_revision": "yes"
   }, 
@@ -46,6 +47,30 @@
         "extra_env": {
             "PACKAGE_GIT_CHECKOUT": "r2.0",
             "PACKAGE_VERSION": "2.0"
+        }
+    },
+    "rel.2.1": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "r2.1",
+            "PACKAGE_VERSION": "2.1"
+        }
+    },
+    "rel.2.2": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "r2.2",
+            "PACKAGE_VERSION": "2.2"
+        }
+    },
+    "rel.2.3": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "r2.3",
+            "PACKAGE_VERSION": "2.3"
+        }
+    },
+    "rel.2.4": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "r2.4",
+            "PACKAGE_VERSION": "2.4"
         }
     },
     "master": {
