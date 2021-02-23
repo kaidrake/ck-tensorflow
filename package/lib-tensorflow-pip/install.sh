@@ -12,6 +12,10 @@
 # PYTHON_PACKAGE_NAME
 # PIP_INSTALL_OPTIONS
 
+echo "**************************************************************"
+echo ""
+echo "Cleanup: removing ${INSTALL_DIR}"
+rm -rf ${INSTALL_DIR:-nonexistent_dir}/*
 
     # This is where pip will install the modules.
     # It has its own funny structure we don't control :
@@ -23,11 +27,6 @@ ln -s lib ${EXTRA_PYTHON_SITE}/lib64
 SHORT_PYTHON_VERSION=`${CK_ENV_COMPILER_PYTHON_FILE} -c 'import sys;print(sys.version[:3])'`
 export PACKAGE_LIB_DIR="${EXTRA_PYTHON_SITE}/lib/python${SHORT_PYTHON_VERSION}/site-packages"
 export PYTHONPATH=$PACKAGE_LIB_DIR:$PYTHONPATH
-
-echo "**************************************************************"
-echo ""
-echo "Cleanup: removing ${EXTRA_PYTHON_SITE}"
-rm -rf "${EXTRA_PYTHON_SITE}"
 
 ######################################################################################
 echo "Installing '${PYTHON_PACKAGE_NAME}' and its dependencies to '${PACKAGE_LIB_DIR}' ..."
