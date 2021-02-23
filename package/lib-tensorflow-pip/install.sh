@@ -17,6 +17,8 @@
     # It has its own funny structure we don't control :
     #
 EXTRA_PYTHON_SITE=${INSTALL_DIR}/python_deps_site
+mkdir -p ${EXTRA_PYTHON_SITE}/lib
+ln -s lib ${EXTRA_PYTHON_SITE}/lib64
 
 SHORT_PYTHON_VERSION=`${CK_ENV_COMPILER_PYTHON_FILE} -c 'import sys;print(sys.version[:3])'`
 export PACKAGE_LIB_DIR="${EXTRA_PYTHON_SITE}/lib/python${SHORT_PYTHON_VERSION}/site-packages"
