@@ -3,6 +3,8 @@
     "extra_dir": "",
     "git_src_dir": "src",
     "install_env": {
+      "CMAKE_BUILD_TYPE": "Release",
+      "CMAKE_VERBOSE_MAKEFILE": "OFF",
       "PACKAGE_GIT": "YES",
       "PACKAGE_PATCH": "YES",
       "PACKAGE_SKIP_LINUX_MAKE": "YES",
