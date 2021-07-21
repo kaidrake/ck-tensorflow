@@ -107,6 +107,9 @@ def setup(i):
     # Path to bundled protobuf.
     pb=os.path.join(lib_path ,'external','protobuf_archive','python')
 
+    path_sep, old_ppath  = (';', '%PYTHONPATH%') if winh=='yes' else (':', '${PYTHONPATH}')
+    env['PYTHONPATH']   = path_sep.join([lib_path, pb, old_ppath])
+
     if winh=='yes':
         s+='\nset PYTHONPATH='+lib_path +';'+pb+';%PYTHONPATH%\n'
     else:
