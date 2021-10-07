@@ -3,7 +3,7 @@
   "customize": {
     "install_env": {
       "PIP_INSTALL_OPTIONS": "--ignore-installed",
-      "PYTHON_PACKAGE_NAME": "tensorflow"
+      "*PYTHON_PACKAGE_NAME": "$<<PACKAGE_NAME>>$"
     }
   },
   "deps": {
@@ -15,7 +15,7 @@
       "tags": "compiler,python"
     }
   },
-  "end_full_path_universal": "build$#sep#$tensorflow$#sep#$__init__.py",
+  "end_full_path_universal": ["build$#sep#$tensorflow$#sep#$__init__.py","build$#sep#$openvino_tensorflow$#sep#$__init__.py"],
   "only_for_host_os_tags": [],
   "only_for_target_os_tags": [
     "windows",
@@ -31,5 +31,22 @@
     "tensorflow",
     "vprebuilt",
     "vpip"
-  ]
+  ],
+  "variations": {
+    "default":{
+      "on_by_default": "yes",
+      "extra_env": {
+        "PACKAGE_NAME": "tensorflow"
+      }
+    },
+    "openvino":{
+      "on_by_default": "no",
+      "extra_env": {
+        "PACKAGE_NAME": "openvino-tensorflow"
+      },
+      "extra_tags": [
+        "vopenvino"
+      ]
+    }
+  }
 }
