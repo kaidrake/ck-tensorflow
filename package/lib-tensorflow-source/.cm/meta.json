@@ -26,58 +26,70 @@
   ],
   "variations": {
     "rel.1.13": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r1.13",
-            "PACKAGE_VERSION": "1.13"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r1.13",
+        "PACKAGE_VERSION": "1.13"
+      }
     },
     "rel.1.14": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r1.14",
-            "PACKAGE_VERSION": "1.14"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r1.14",
+        "PACKAGE_VERSION": "1.14"
+      }
     },
     "rel.1.15": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r1.15",
-            "PACKAGE_VERSION": "1.15"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r1.15",
+        "PACKAGE_VERSION": "1.15"
+      }
     },
     "rel.2.0": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r2.0",
-            "PACKAGE_VERSION": "2.0"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.0",
+        "PACKAGE_VERSION": "2.0"
+      }
     },
     "rel.2.1": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r2.1",
-            "PACKAGE_VERSION": "2.1"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.1",
+        "PACKAGE_VERSION": "2.1"
+      }
     },
     "rel.2.2": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r2.2",
-            "PACKAGE_VERSION": "2.2"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.2",
+        "PACKAGE_VERSION": "2.2"
+      }
     },
     "rel.2.3": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r2.3",
-            "PACKAGE_VERSION": "2.3"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.3",
+        "PACKAGE_VERSION": "2.3"
+      }
     },
     "rel.2.4": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "r2.4",
-            "PACKAGE_VERSION": "2.4"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.4",
+        "PACKAGE_VERSION": "2.4"
+      }
+    },
+    "rel.2.5": {
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.5",
+        "PACKAGE_VERSION": "2.5"
+      }
+    },
+    "rel.2.6": {
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "r2.6",
+        "PACKAGE_VERSION": "2.6"
+      }
     },
     "master": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "master",
-            "PACKAGE_VERSION": "master"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "master",
+        "PACKAGE_VERSION": "master"
+      }
     }
   },
   "use_scripts_from_another_entry": {
