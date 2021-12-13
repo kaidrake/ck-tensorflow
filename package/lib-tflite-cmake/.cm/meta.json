@@ -28,7 +28,7 @@
       "add_to_path": "no",
       "force_target_as_host": "yes",
       "local": "yes",
-      "name": "GTEST lib",
+      "name": "GTest lib",
       "sort": 10,
       "tags": "lib,gtest"
     },
@@ -88,6 +88,7 @@
     "tensorflow-static",
     "vsrc",
     "vstatic",
+    "compiled",
     "via-cmake"
   ],
   "use_preprocess_scripts_from_another_entry": {
@@ -105,6 +106,16 @@
       },
       "on_by_default": "no"
     },
+    "v2.7.0": {
+      "on_by_default": "yes",
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v2.7.0",
+        "PACKAGE_PATCH__FFTSG2D": "v2.5.0_fftsg2d.patch",
+        "PACKAGE_PATCH__PACKAGE": "",
+        "PACKAGE_PATCH__OFFSETOF": "v2.3.90_offsetof.patch",
+        "PACKAGE_VERSION": "2.7.0"
+      }
+    },
     "v2.6.0": {
       "extra_env": {
         "PACKAGE_GIT_CHECKOUT": "v2.6.0",
@@ -113,7 +124,7 @@
         "PACKAGE_PATCH__OFFSETOF": "v2.3.90_offsetof.patch",
         "PACKAGE_VERSION": "2.6.0"
       },
-      "on_by_default": "yes"
+      "on_by_default": "no"
     },
     "v2.5.0": {
       "extra_env": {
