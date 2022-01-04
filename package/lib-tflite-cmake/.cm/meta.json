@@ -8,7 +8,7 @@
       "PACKAGE_GIT": "YES",
       "PACKAGE_PATCH": "YES",
       "PACKAGE_SKIP_LINUX_MAKE": "YES",
-      "PACKAGE_PATCH_LIST": "\\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__PACKAGE>>$ \\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__OFFSETOF>>$ \\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__FFTSG2D>>$",
+      "PACKAGE_PATCH_LIST": "\\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__PACKAGE>>$ \\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__OFFSETOF>>$ \\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__FFTSG2D>>$ \\$<<ORIGINAL_PACKAGE_DIR>>$/patch.linux.variations/\\$<<PACKAGE_PATCH__LIMITS>>$",
       "PACKAGE_PATCH__FFTSG2D": "",
       "PACKAGE_PATCH__PACKAGE": "",
       "PACKAGE_PATCH__OFFSETOF": "",
@@ -113,6 +113,7 @@
         "PACKAGE_PATCH__FFTSG2D": "v2.5.0_fftsg2d.patch",
         "PACKAGE_PATCH__PACKAGE": "",
         "PACKAGE_PATCH__OFFSETOF": "v2.3.90_offsetof.patch",
+        "PACKAGE_PATCH__LIMITS": "v2.7.0_limits.patch",
         "PACKAGE_VERSION": "2.7.0"
       }
     },

@@ -1,0 +1,12 @@
+diff --git a/tensorflow/lite/simple_memory_arena_debug_dump.cc b/tensorflow/lite/simple_memory_arena_debug_dump.cc
+index 256fa0b9a7e..dc90f9b1326 100644
+--- a/tensorflow/lite/simple_memory_arena_debug_dump.cc
++++ b/tensorflow/lite/simple_memory_arena_debug_dump.cc
+@@ -18,6 +18,7 @@ limitations under the License.
+ #include <queue>
+ #include <string>
+ #include <vector>
++#include <limits>
+ 
+ #include "tensorflow/lite/simple_memory_arena.h"
+ 
